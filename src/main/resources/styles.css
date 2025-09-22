@@ -1,0 +1,47 @@
+/* Snake Game Buttons */
+.pongButton {
+    -fx-background-color: black;
+    -fx-text-fill: lime;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10 20 10 20; /* top/right/bottom/left */
+    -fx-cursor: hand;
+}
+
+/* Hover effect */
+.pongButton:hover {
+    -fx-background-color: #222;
+    -fx-text-fill: #aaff00;
+}
+
+/* Game Over Label */
+.gameOverLabel {
+    -fx-text-fill: red;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , black , 4 , 0 , 2 , 2 );
+}
+
+/* Game Over Label */
+.gameDescription {
+    -fx-text-fill: white;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , black , 4 , 0 , 2 , 2 );
+}
+
+/* Game Over Label */
+.points {
+    -fx-text-fill: white;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 100px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , black , 4 , 0 , 2 , 2 );
+}
