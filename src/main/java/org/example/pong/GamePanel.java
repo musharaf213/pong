@@ -18,8 +18,8 @@ import javafx.stage.Stage;
 
 public class GamePanel extends Application {
 
-    public static final int WIDTH = 1200;
-    public static final int HEIGHT = 1000;
+    public static final int WIDTH = 1000;
+    public static final int HEIGHT = 600;
 
     private Ball ball;
     private Paddle player;
@@ -54,7 +54,7 @@ public class GamePanel extends Application {
 
         Button startButton = new Button("Start Game");
         startButton.setLayoutX(GamePanel.WIDTH/2 -90);
-        startButton.setLayoutY(GamePanel.HEIGHT/3);
+        startButton.setLayoutY(GamePanel.HEIGHT/2);
         startButton.getStyleClass().add("pongButton");
 
         String title = "PONG GAME";
@@ -92,13 +92,13 @@ public class GamePanel extends Application {
 
         Button retry = new Button("Retry");
         retry.setLayoutX(GamePanel.WIDTH/2 -53);
-        retry.setLayoutY(GamePanel.HEIGHT/3);
+        retry.setLayoutY(GamePanel.HEIGHT/2);
         retry.setVisible(false);
         retry.getStyleClass().add("pongButton");
 
         Label winMessage = new Label("");
         winMessage.setLayoutX(GamePanel.WIDTH/2 -100);
-        winMessage.setLayoutY(GamePanel.HEIGHT/3.7 );
+        winMessage.setLayoutY(GamePanel.HEIGHT/3 );
         winMessage.getStyleClass().add("gameDescription");
         winMessage.setVisible(false);
 

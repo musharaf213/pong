@@ -100,8 +100,8 @@ public class Ball {
         double changeX = Math.cos(Math.toRadians(this.ball.getRotate()));
         double changeY = Math.sin(Math.toRadians(this.ball.getRotate()));
 
-        changeX *= 5;
-        changeY *= 5;
+        changeX *= 7;
+        changeY *= 7;
 
         this.movement = this.movement.add(changeX,changeY);
     }
