@@ -56,7 +56,6 @@ public class Paddle {
         return collisionArea.getBoundsInLocal().getWidth() != -1;
     }
 
-
     public void collideAndReflect() {
         Rectangle paddle = this.paddle;
         Circle ballShape = ball.getBall();
@@ -89,14 +88,14 @@ public class Paddle {
             double paddleCenterY = paddleBounds.getMinY() + paddle.getHeight() / 2;
             double offset = (ballCenterY - paddleCenterY) / (paddle.getHeight() / 2); // -1..1
 
-            double speed = movement.magnitude(); // Keep speed constant
+            double speed = movement.magnitude(); //  speed constant
             double newDx = movement.getX();
             double newDy = offset * speed;
 
             // Normalize to original speed
             movement = new Point2D(newDx, newDy).normalize().multiply(speed);
 
-            // Correct position to avoid sticking
+            // avoid sticking
             if (ballNextX < paddleLeft)
                 ballShape.setTranslateX(paddleLeft - ballRadius);
             else

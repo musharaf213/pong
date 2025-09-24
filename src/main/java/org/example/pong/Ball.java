@@ -2,7 +2,6 @@ package org.example.pong;
 
 import javafx.geometry.Point2D;
 import javafx.scene.shape.Circle;
-
 import java.util.Random;
 
 public class Ball {
@@ -83,13 +82,13 @@ public class Ball {
         int rotate;
 
         if (!playerTurn) {
-            // Send ball to the right: 300–360 or 0–60
+            // Send ball to the right: 300–360 Grad or 0–60
             do {
                 rotate = rand.nextInt(360);
             } while (!(rotate <= 60 || rotate >= 300));
             playerTurn = true;
         } else {
-            // Send ball to the left: 120–240
+            // Send ball to the left: 120–240 Grad
             do {
                 rotate = rand.nextInt(360);
             } while (!(rotate >= 120 && rotate <= 240));
