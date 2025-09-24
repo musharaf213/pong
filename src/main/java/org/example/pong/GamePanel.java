@@ -59,7 +59,7 @@ public class GamePanel extends Application {
 
         String title = "PONG GAME";
 
-        // Colors for each letter
+        // Colors for each letter of PONG GAME
         Color[] colors = {Color.RED, Color.ORANGE, Color.YELLOW, Color.GREEN, Color.CYAN, Color.BLUE, Color.MAGENTA};
 
         HBox hbox = new HBox(5); // 5px spacing between letters
@@ -70,8 +70,8 @@ public class GamePanel extends Application {
             char c = title.charAt(i);
 
             Text letter = new Text(String.valueOf(c));
-            letter.setFont(Font.font("Consolas", 60)); // big font
-            letter.setFill(colors[i % colors.length]);   // assign color cyclically
+            letter.setFont(Font.font("Consolas", 60));
+            letter.setFill(colors[i % colors.length]);
 
             hbox.getChildren().add(letter);
         }

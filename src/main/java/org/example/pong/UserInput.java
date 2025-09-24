@@ -40,5 +40,4 @@ public class UserInput {
             this.ball.accelerate();
         }
     }
-
 }
