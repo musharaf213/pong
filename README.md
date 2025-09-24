@@ -15,8 +15,9 @@ The game features single-player paddle control against a computer opponent, real
 - **Restartable matches**: Easily reset the game to play again.  
 
 ---
-
-
+## Recommended Java Version
+- **Java JDK 17** 
+---
 ## Local Development Setup
 
 Clone the repository:
